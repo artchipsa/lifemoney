@@ -1,0 +1,45 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ICON</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-20648 -1712)">
+<g id="ICON">
+<g id="Rectangle 8">
+<use xlink:href="#path0_fill" transform="translate(20648 1712)" fill="#007EE5"/>
+</g>
+<g id="Group">
+<g id="Rectangle 9">
+<use xlink:href="#path1_fill" transform="translate(20660 1728.29)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(20660 1728.29)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(20660 1728.29)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Rectangle 9">
+<use xlink:href="#path3_fill" transform="translate(20664.3 1731.71)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 9">
+<use xlink:href="#path4_fill" transform="translate(20660 1733.43)" fill="#8BCBFF"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path5_fill" transform="translate(20664.3 1739.43)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path5_fill" transform="translate(20669.4 1739.43)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 11">
+<use xlink:href="#path5_fill" transform="translate(20674.6 1739.43)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 24C 0 10.7452 10.7452 0 24 0C 37.2548 0 48 10.7452 48 24C 48 37.2548 37.2548 48 24 48C 10.7452 48 0 37.2548 0 24Z"/>
+<path id="path1_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 21.1429 0C 22.2474 0 23.1429 0.895431 23.1429 2L 23.1429 14.2857C 23.1429 15.3903 22.2474 16.2857 21.1429 16.2857L 2 16.2857C 0.895431 16.2857 0 15.3903 0 14.2857L 0 2Z"/>
+<path id="path2_stroke_2x" d="M 2 2L 21.1429 2L 21.1429 -2L 2 -2L 2 2ZM 21.1429 2L 21.1429 14.2857L 25.1429 14.2857L 25.1429 2L 21.1429 2ZM 21.1429 14.2857L 2 14.2857L 2 18.2857L 21.1429 18.2857L 21.1429 14.2857ZM 2 14.2857L 2 2L -2 2L -2 14.2857L 2 14.2857ZM 2 -2C -0.209139 -2 -2 -0.209139 -2 2L 2 2L 2 -2ZM 21.1429 2L 25.1429 2C 25.1429 -0.209139 23.352 -2 21.1429 -2L 21.1429 2ZM 21.1429 14.2857L 21.1429 18.2857C 23.352 18.2857 25.1429 16.4949 25.1429 14.2857L 21.1429 14.2857ZM 2 14.2857L -2 14.2857C -2 16.4949 -0.209139 18.2857 2 18.2857L 2 14.2857Z"/>
+<path id="path3_fill" d="M 0 1C 0 0.447715 0.447715 0 1 0L 3.3985 0C 3.95078 0 4.3985 0.447715 4.3985 1L 4.3985 3.3207C 4.3985 3.87298 3.95078 4.3207 3.3985 4.3207L 1 4.3207C 0.447715 4.3207 0 3.87298 0 3.3207L 0 1Z"/>
+<path id="path4_fill" d="M 0 0L 23.1429 0L 23.1429 3.42857L 0 3.42857L 0 0Z"/>
+<path id="path5_fill" d="M 0 0L 4.28571 0L 4.28571 1.71429L 0 1.71429L 0 0Z"/>
+</defs>
+</svg>

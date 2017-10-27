@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+		.modal.fade#office-city(tabindex="-1" role="dialog")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						.modal-title Выберите ваш город
+						button.close(data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+					.modal-body
+						#map_office
+		form.big-form.flex
+			.lone-info
+				.row.justify-content-center
+					.col-12.col-md-12.col-lg-9.col-xl-9
+						a(href="").back-link
+							i.fa.fa-long-arrow-left(aria-hidden="true")
+							span назад
+						.form-block
+							.form-title Заполните персональные данные
+							.form-row.align-items-center
+								.col-12.col-md-3.col-lg-3
+									label Имя
+								.col-12.col-md-9.col-lg-8
+									input(type="text", name="")
+							.form-row.align-items-center
+								.col-12.col-md-3.col-lg-3
+									label Телефон
+								.col-12.col-md-9.col-lg-8
+									input.phone(type="tel", name="")
+						.form-block
+							.form-title Выберите где забрать деньги
+							.form-row.align-items-center
+								.col-12.col-md-3.col-lg-3
+								.col-12.col-md-9.col-lg-8
+									.custom-check
+										input#money_on_card(type="checkbox", name="money_on_card")
+										label(for="money_on_card") Хочу получить деньги на карту
+							.form-row.align-items-center
+								.col-12.col-md-3.col-lg-3
+									label Город
+								.col-12.col-md-9.col-lg-8
+									select#city-change.custom-select-modal
+										option(value="1") Москва
+										option(value="2") Владивосток
+										option(value="3") Красноярск
+							.form-row.align-items-center
+								.col-12.col-md-3.col-lg-3
+									label Адрес офиса
+								.col-12.col-md-9.col-lg-8
+									select#adress.custom-select-modal.adress(type="text", name="")
+										option(value="1") Гоголевский б-р, 16/13, Москва
+										option(value="2") Ермолаевский пер., 25, Москва
+										option(value="3") Дмитровский пер., 11, Москва
+										option(value="4") Николоямская ул., 15, Москва
+										option(value="4") Орликов пер., 5с1, Москва
+									a(href="#" data-toggle="modal" data-target="#office-city").show-on-map выбрать офис на карте
+			.lone-calc
+				.form-title Выберите сумму займа
+				label.summ
+				input#range
+				.form-row
+					.custom-check
+						input#accept(type="checkbox", name="accept")
+						label(for="accept") Я соглашаюсь с обработкой персональных данных
+				.form-row
+					input(type="submit", value="Отправить" disabled).btn.blue
+
+				
+		include modules/footer.jade
+		//- Скрипты страницы
+		include modules/scripts.jade

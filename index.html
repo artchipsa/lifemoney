@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Живые деньги</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&amp;amp;subset=cyrillic"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"/>
+        <link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"/>
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-2 col-5"><a href="/" class="logo"><img src="img/logo.svg" alt="логотип"/></a></div>
+                    <div class="col-lg-10 col-md-10 col-7">
+                        <div class="navbar navbar-expand-xl">
+                            <button type="button" data-toggle="collapse" data-target="#header" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                            <div id="header" class="collapse navbar-collapse">
+                                <div class="container-fluid">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-md-12 col-xl-6">
+                                            <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item"><a href="/about" class="nav-link">О компании</a></li>
+                                                <li class="nav-item"><a href="/faq" class="nav-link">вопрос-ответ</a></li>
+                                                <li class="nav-item"><a href="/info" class="nav-link">информация</a></li>
+                                                <li class="nav-item"><a href="/offices" class="nav-link">офисы</a></li>
+                                                <li class="nav-item"><a href="/payonline" class="nav-link">Оплатить онлайн</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xl-6 align-items-center justify-content-end flex">
+                                            <div class="city-block"><i aria-hidden="true" class="fa fa-location-arrow"></i>
+                                                <select name="" class="custom-select">
+                                                    <option value="1">Москва</option>
+                                                    <option value="1">Красноярск</option>
+                                                    <option value="1">Калуга</option>
+                                                    <option value="1">Новосибирск</option>
+                                                    <option value="1">Хабаровск</option>
+                                                </select>
+                                            </div><a href="#" data-toggle="modal" data-target="#lk" class="btn secondary">Войти</a><a href="#" data-toggle="modal" data-target="#ask" class="btn red">Задать вопрос</a><a href="tel:+ 7 391 205 05 05" class="phone-block"><img src="img/phone.svg" alt=""/><span>+ 7 391 205 05 05</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-height"></div>
+        <div id="lk" tabindex="-1" role="dialog" class="modal small-modal fade">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="login">
+                        <div class="modal-header">
+                            <div class="modal-title">Вход в личный кабинет</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <input type="tel" name="" placeholder="Ващ номер телефона" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Ваше имя" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="password" name="" placeholder="Пароль" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Войти" class="btn blue"/>
+                                </div>
+                                <div class="forgot-btn"><a href="#">Забыли пароль?</a></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="forgot-login">
+                        <div class="modal-header">
+                            <div class="modal-title">Забыли пароль?</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <p>Введите свой номер телефона, <br/>или почту на которую прийдет пароль</p>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Телефон или Адрес электронной почты" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Далее" class="btn blue"/>
+                                </div>
+                                <div class="forgot-btn"><a href="#">Вернуться ко входу</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ask" tabindex="-1" role="dialog" class="modal small-modal fade">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="ask">
+                        <div class="modal-header">
+                            <div class="modal-title">Задать вопрос</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <input type="tel" name="" placeholder="как вас зовут" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Ваш email или Телефон" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <textarea name="" rows="10" placeholder="Чем мы могли бы вам помочь?"></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Отправить" class="btn blue"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="success">
+                        <div class="modal-header">
+                            <div class="modal-title">Заявка отправлена</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Наш менеджер вам перезвонит <br/> в ближайшее время. Спасибо.</p><a href="#" data-dismiss="modal" aria-label="Close" class="btn btn blue">Закрыть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-slider">
+            <div class="main-slider-timer"></div>
+            <div class="counter"><span>выдано</span>
+                <div class="count_number">10000</div><span>займов</span>
+            </div>
+            <div class="owl-carousel">
+                <div style="background-image: url(img/main-slider.jpg)" class="item">
+                    <div class="main-slider__text-block">
+                        <h2>ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!</h2><a href="" class="btn blue">Оформить займ</a>
+                    </div>
+                </div>
+                <div style="background-image: url(img/main-slider.jpg)" class="item">
+                    <div class="main-slider__text-block">
+                        <h2>ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!</h2><a href="" class="btn blue">Оформить займ</a>
+                    </div>
+                </div>
+                <div style="background-image: url(img/main-slider.jpg)" class="item">
+                    <div class="main-slider__text-block">
+                        <h2>ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!</h2><a href="" class="btn blue">Оформить займ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                    <div class="main-hero-text">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item">
+                                    <div class="title">Легко получить</div>
+                                    <ul class="common-list">
+                                        <li><span>Заполните короткую заявку и наш менеджер перезвонит в течение 15 минут для подтверждения информации.</span></li>
+                                        <li><span>Дождитесь смс с сообщением об одобрении заявки.</span></li>
+                                        <li><span>Приезжайте в ближайший офис и забирайте деньги, или мы перечислим их на карту.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item">
+                                    <div class="title">Удобно платить</div>
+                                    <p>Оплата займа через : Элекснет, Euro Plat, Золотая корона <a href="">онлайн с сайта</a>, наличными в офисе <a href="">(адреса офисов)</a></p>
+                                    <div class="pay-methods-block"><a href="" class="pay-item"><img src="img/pay1.png" alt=""/></a><a href="" class="pay-item"><img src="img/pay2.png" alt=""/></a><a href="" class="pay-item"><img src="img/pay3.png" alt=""/></a><a href="" class="pay-item"><img src="img/pay4.png" alt=""/></a><a href="" class="pay-item"><img src="img/pay5.png" alt=""/></a><a href="" class="pay-item"><img src="img/pay6.png" alt=""/></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="pay_online_form"><img src="img/pay.svg" alt=""/>
+                        <div class="title">Оплата онлайн</div>
+                        <div class="form-row align-items-end">
+                            <div class="col-lg-5 col-md-12 col-12">
+                                <label>номер договора</label>
+                                <input type="number" class="required"/>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-12">
+                                <label>сумма оплаты</label>
+                                <input type="number" class="required"/>
+                            </div>
+                            <div class="col-lg-2 col-md-12 col-12">
+                                <input type="submit" value="Оплатить" class="btn blue"/>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="card-block">
+                        <h2 class="special-title">Получите деньги на карту, не выходя из дома</h2>
+                        <div class="row">
+                            <div class="col-lg-6"><img src="img/card.svg" alt="кредитная карта"/></div>
+                            <div class="col-lg-6">
+                                <ul class="common-list">
+                                    <li><span>Быстро и просто. Никаких залогов и поручителей. </span></li>
+                                    <li><span>После возврата первого займа вы получаете каждый последующий на более выгодных условиях. С каждым новым займом процент снижается, а доступная вам сумма увеличивается.</span></li>
+                                    <li><span>Никаких дополнительных платежей, скрытых комиссий и недосказанности  - такова наша позиция.</span></li>
+                                </ul><a href="" class="btn blue">Оформить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-height"></div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-xl-6 col-md-12 col-12 col-lg-6"><span>Проектирование и дизайн <a href="http://chipsa.ru" target="_blank">«Чипса»</a>, 2017</span></div>
+                    <div class="col col-xl-6 col-md-12 col-12 col-lg-6"><a href="http://www.cbr.ru/finmarkets/" target="_blank">Государственный реестр микрофинансовых организаций</a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAE8iqwKY6PeKvryHYgM_k7cbH9ZyKk5g" async="async" defer="defer"></script>
+        <script src="https://use.fontawesome.com/856283dff2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

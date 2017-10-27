@@ -1,0 +1,21 @@
+<svg width="126" height="150" viewBox="0 0 126 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Vector</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7468 -264)">
+<g id="Vector" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 7549 285)" fill="#F03454"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="7468" y="264" width="126" height="150" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="4" dy="20"/>
+<feGaussianBlur stdDeviation="20.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.890196 0 0 0 0 0.196078 0 0 0 0 0.298039 0 0 0 0.367839 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 22 0L 22 2.18347e-33C 9.86977 1.72035e-16 4.39485e-07 10.166 4.39485e-07 22.6667C 4.39485e-07 34.6847 19.9759 66.0019 20.8518 67.3603C 20.8534 67.3628 20.854 67.3638 20.8556 67.3662C 21.109 67.7579 21.5395 68 22 68C 22.4581 68 22.8838 67.7604 23.1403 67.3723C 23.1446 67.3658 23.1464 67.3631 23.1506 67.3565C 24.0578 65.9447 44 34.6738 44 22.6667C 44 10.166 34.1302 0 22 0ZM 22 32.5833C 16.6925 32.5833 12.375 28.1349 12.375 22.6667C 12.375 17.1984 16.6926 12.75 22 12.75C 27.3074 12.75 31.625 17.1984 31.625 22.6667C 31.625 28.1349 27.3074 32.5833 22 32.5833Z"/>
+</defs>
+</svg>

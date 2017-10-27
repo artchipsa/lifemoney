@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+
+		.container-fluid
+			.row.justify-content-center
+				.col-12.col-md-12.col-lg-10.col-xl-10
+					a(href="").back-link
+						i.fa.fa-long-arrow-left(aria-hidden="true")
+						span назад
+					.fail-block
+						p Данной страницы не существует!
+						h1 Ошибка 404
+
+		include modules/footer.jade
+		//- Скрипты страницы
+		include modules/scripts.jade

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+		.container-fluid
+			.row.justify-content-center
+				.col-xl-10.col-lg-10.col-md-12.col-sm-12
+					.hero-about
+						img.about-abs(src="img/about.png", alt="")
+						.big-title Главное для нас - постоянный клиент им может стать каждый
+						.about-text
+							.row
+								.col-12.col-xl-7.col-lg-6.col-md-12
+									img.small-about-img(src="img/about-small.jpg", alt="")
+								.col-12.col-xl-5.col-lg-6.col-md-12
+									p Компания "Живые деньги" работает на рынке с 2012 года. За это время мы выработали  свой стиль работы, который понятен и удобен нашим клиентам. Первый заем мы даем быстро, а все последующие - молниеносно! Наши постоянные клиенты получают больше денег под уменьшающийся процент, потому что наше сотрудничество основано на доверии
+									p Официальная регистрация в реестре микрофинансовых организаций. #[b Более 50 % клиентов становятся постоянными]. Мы ценим постоянство и поэтому #[b уменьшаем процент для наших клиентов].
+					.numbers-block
+						.row
+							.col-12.col-xl-3.col-lg-6.col-md-6
+								.item
+									.number 30
+									p #[span человек] за сутки стали новыми клиентами
+							.col-12.col-xl-3.col-lg-6.col-md-6
+								.item
+									.number 5 000
+									p #[span человек] начали дружить с нами
+							.col-12.col-xl-3.col-lg-6.col-md-6
+								.item
+									.number 30
+									p #[span человек] за сутки оформили повторный займ
+							.col-12.col-xl-3.col-lg-6.col-md-6
+								.item
+									.number 160 000 000
+									p #[span человек] выдано займов за последний год
+					.benefits
+						.big-title Почему с нами выгодно
+						.benefits-wrapper
+							.row.align-items-center.justify-content-center.benefit
+								.col-lg-4.col-md-12
+									.img-item
+										img(src="img/b1.svg", alt="")
+								.col-lg-1
+								.col-lg-5.col-md-12
+									.text-item
+										.title Прозрачные условия
+										p Наш подход к работе основан на прозрачности условий выдачи займов и на доверии к клиенту. Именно такая позиция помогает нашей компании развиваться и поддерживать хорошие отношения с постоянными клиентами. Зная, что мы не нарушаем заранее оговоренных условий, люди приходят к нам возвращаются снова и снова
+							.row.justify-content-center.hr-row
+								.col-lg-6.col-12
+									.hr
+							.row.align-items-center.justify-content-center.benefit
+								.col-lg-4.order-lg-3
+									.img-item
+										img(src="img/b2.svg", alt="")
+								.col-lg-1.order-lg-2
+								.col-lg-5.order-lg-1
+									.text-item
+										.title Постоянство — основа партнерских отношений
+										p Именно поэтому, каждый последующий заем постоянные клиенты получают с меньшим процентом, скидка может достигать 77,6 %!
+							.row.justify-content-center.hr-row
+								.col-lg-6.col
+									.hr
+							.row.align-items-center.justify-content-center.benefit
+								.col-lg-4
+									.img-item
+										img(src="img/b3.svg", alt="")
+								.col-lg-1
+								.col-lg-5
+									.text-item
+										.title Оформить просто
+										p Для получения быстрого займа вам не нужны лишние документы и поручители, захватите только паспорт. Забрать свои деньги вы можете из ближайшего к вам офиса или получить сразу на карту.
+							.row.justify-content-center.hr-row
+								.col-lg-6.col
+									.hr
+							.row.align-items-center.justify-content-center.benefit
+								.col-lg-4.order-lg-3
+									.img-item
+										img(src="img/b4.svg", alt="")
+								.col-lg-1.order-lg-2
+								.col-lg-5.order-lg-1
+									.text-item
+										.title Оперативно
+										p Высокая скорость рассмотрения заявки и получения срочных денег стали возможны благодаря отлаженной работе персонала и большой сети офисов по всей России. Поэтому вы можете забрать свой займ в наиболее удобном для вас месте и сэкономить свое время. 
+					.quote-block
+						.row.justify-content-center.align-items-center
+							.col-12.col-lg-5.col-xl-4.col-md-12
+								img.capa(src="img/capa.svg", alt="")
+								.quote-text "Наш бизнес основан на отношениях с людьми. Мы приходим на помощь тогда, когда это нужно, и всегда рады, если это позволяет нашим клиентам осуществить  мечту или решить  срочную проблему. Мы действительно дорожим своими клиентами, поэтому рады отзывам и предложениям, которые касаются нашей работы. Пишите мне лично!" #[span От лица директора:]
+							.col-12.col-lg-7.col-xl-7.col-md-12
+								.owner
+									img.big-image(src="img/owner.png", alt="")
+									img.sign(src="img/sign.svg", alt="")
+					.callback-block
+						.special-title Вы можете написать нам, если у вас возникли вопросы
+						.row.justify-content-center
+							.col-12.col-lg-8.col-md-10.col-sm-12
+								form
+									.form-row
+										.col-12.col-md-6.col-lg-6.col-xl-6
+											input(type="text" placeholder="как вас зовут")
+										.col-12.col-md-6.col-lg-6.col-xl-6
+											input(type="text" placeholder="Ваш email или Телефон")
+										.col-12
+											textarea(name="", rows="10", placeholder="Чем мы могли бы вам помочь?")
+										.col-12.col-md-3.col-lg-3.col-xl-3.ml-auto
+											input(type="submit", value="отправить").btn.blue
+
+
+
+ 
+		include modules/footer.jade
+		//- Скрипты страницы
+		include modules/scripts.jade

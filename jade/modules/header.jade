@@ -1,0 +1,43 @@
+header
+	.container-fluid
+		.row.align-items-center
+			.col-lg-2.col-md-2.col-5
+				a(href="/").logo
+					img(src="img/logo.svg", alt="логотип")
+			.col-lg-10.col-md-10.col-7
+				.navbar.navbar-expand-xl
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#header")
+						span.navbar-toggler-icon
+					.collapse.navbar-collapse#header
+						.container-fluid
+							.row.align-items-center
+								.col-lg-6.col-md-12.col-xl-6
+									ul.navbar-nav.mr-auto
+										li.nav-item
+											a.nav-link(href="/about") О компании
+										li.nav-item
+											a.nav-link(href="/faq") вопрос-ответ
+										li.nav-item
+											a.nav-link(href="/info") информация
+										li.nav-item
+											a.nav-link(href="/offices") офисы
+										li.nav-item
+											a.nav-link(href="/payonline") Оплатить онлайн
+								.col-lg-6.col-md-12.col-xl-6.align-items-center.justify-content-end.flex
+									.city-block
+										i.fa.fa-location-arrow(aria-hidden="true")
+										select.custom-select(name="")
+											option(value="1") Москва
+											option(value="1") Красноярск
+											option(value="1") Калуга
+											option(value="1") Новосибирск
+											option(value="1") Хабаровск
+									a(href="#" data-toggle="modal" data-target="#lk").btn.secondary Войти
+									a(href="#" data-toggle="modal" data-target="#ask").btn.red Задать вопрос
+									a(href="tel:+ 7 391 205 05 05").phone-block
+										img(src="img/phone.svg", alt="")
+										span + 7 391 205 05 05
+
+
+
+.header-height

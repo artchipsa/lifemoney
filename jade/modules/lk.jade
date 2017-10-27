@@ -1,0 +1,36 @@
+.modal.small-modal.fade#lk(tabindex="-1" role="dialog")
+	.modal-dialog(role="document")
+		.modal-content
+			.login
+				.modal-header
+					.modal-title Вход в личный кабинет
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					form
+						.form-row
+							input.required(type="tel", name="", placeholder="Ващ номер телефона")
+						.form-row
+							input.required(type="text", name="", placeholder="Ваше имя")
+						.form-row
+							input.required(type="password", name="", placeholder="Пароль")
+						.form-row
+							input(type="submit", value="Войти").btn.blue
+						.forgot-btn
+							a(href="#") Забыли пароль?
+			.forgot-login
+				.modal-header
+					.modal-title Забыли пароль?
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					form
+						p Введите свой номер телефона, #[br]или почту на которую прийдет пароль
+						.form-row
+							input.required(type="text", name="", placeholder="Телефон или Адрес электронной почты")
+						.form-row
+							input(type="submit", value="Далее").btn.blue
+						.forgot-btn
+							a(href="#") Вернуться ко входу
+
+				

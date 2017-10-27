@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+		include modules/lk.jade
+		include modules/ask.jade
+		.main-slider
+			.main-slider-timer
+			.counter
+				span выдано
+				.count_number 10000
+				span займов
+			.owl-carousel
+				.item(style="background-image: url(img/main-slider.jpg)")
+					.main-slider__text-block
+						h2 ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!
+						a(href="").btn.blue Оформить займ
+				.item(style="background-image: url(img/main-slider.jpg)")
+					.main-slider__text-block
+						h2 ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!
+						a(href="").btn.blue Оформить займ
+				.item(style="background-image: url(img/main-slider.jpg)")
+					.main-slider__text-block
+						h2 ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!
+						a(href="").btn.blue Оформить займ
+		.container-fluid
+			.row.justify-content-center
+				.col-xl-10.col-lg-10.col-md-12.col-sm-12
+					.main-hero-text
+						.row
+							.col-lg-6
+								.item
+									.title Легко получить
+									ul.common-list
+										li
+											span Заполните короткую заявку и наш менеджер перезвонит в течение 15 минут для подтверждения информации.
+										li
+											span Дождитесь смс с сообщением об одобрении заявки.
+										li
+											span Приезжайте в ближайший офис и забирайте деньги, или мы перечислим их на карту.
+
+							.col-lg-6
+								.item
+									.title Удобно платить
+									p Оплата займа через : Элекснет, Euro Plat, Золотая корона #[a(href="") онлайн с сайта], наличными в офисе #[a(href="") (адреса офисов)]
+									.pay-methods-block
+										a(href="").pay-item
+											img(src="img/pay1.png", alt="")
+										a(href="").pay-item
+											img(src="img/pay2.png", alt="")
+										a(href="").pay-item
+											img(src="img/pay3.png", alt="")
+										a(href="").pay-item
+											img(src="img/pay4.png", alt="")
+										a(href="").pay-item
+											img(src="img/pay5.png", alt="")
+										a(href="").pay-item
+											img(src="img/pay6.png", alt="")
+					form.pay_online_form(action="")
+						img(src="img/pay.svg", alt="")
+						.title Оплата онлайн
+						.form-row.align-items-end
+							.col-lg-5.col-md-12.col-12
+								label номер договора
+								input.required(type="number") 
+							.col-lg-5.col-md-12.col-12
+								label сумма оплаты
+								input.required(type="number")
+							.col-lg-2.col-md-12.col-12
+								input(type="submit", value="Оплатить").btn.blue
+					.card-block
+						h2.special-title Получите деньги на карту, не выходя из дома
+						.row
+							.col-lg-6
+								img(src="img/card.svg", alt="кредитная карта")
+							.col-lg-6
+								ul.common-list
+									li
+										span Быстро и просто. Никаких залогов и поручителей. 
+									li
+										span После возврата первого займа вы получаете каждый последующий на более выгодных условиях. С каждым новым займом процент снижается, а доступная вам сумма увеличивается.
+									li
+										span Никаких дополнительных платежей, скрытых комиссий и недосказанности  - такова наша позиция.
+								a(href="").btn.blue Оформить
+		include modules/footer.jade
+
+
+
+		//- Скрипты страницы
+		include modules/scripts.jade

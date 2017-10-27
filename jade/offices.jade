@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+		.modal.fade#office-city(tabindex="-1" role="dialog")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						.modal-title Выберите ваш город
+						button.close(data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true") &times;
+					.modal-body
+						select.custom-select-modal
+							option(value="1") Москва
+							option(value="2") Архангельск
+							option(value="3") Новосибирск
+							option(value="4") Мурманск
+							option(value="5") Красноярск
+							option(value="6") Волгоград
+							option(value="7") Тюмень
+		.office-wrapper-block
+			.offices-block
+				.city-row
+					a(href="" data-toggle="modal" data-target="#office-city").city-choose
+						i.fa.fa-location-arrow(aria-hidden="true")
+						span Москва
+				.office-row.active
+					img(src="img/of1.jpg", alt="")
+					.office-text
+						.office-street 
+							p ул.Совхозная, д.41 (м.Люблино) 
+							a(href="").mobile-show Показать на карте
+						.office-work-time
+							i.fa.fa-clock-o(aria-hidden="true")
+							span Понедельник-Воскресенье с 9.00-20.00
+						.office-phone
+							.phone-block
+								.visible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+								.invisible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+							a.show-phones(href="")
+								p показать все телефоны
+								i.fa.fa-chevron-down(aria-hidden="true")
+				.office-row
+					img(src="img/of1.jpg", alt="")
+					.office-text
+						.office-street
+							p ул.Совхозная, д.41 (м.Люблино) 
+							a(href="").mobile-show Показать на карте
+						.office-work-time
+							i.fa.fa-clock-o(aria-hidden="true")
+							span Понедельник-Воскресенье с 9.00-20.00
+						.office-phone
+							.phone-block
+								.visible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+								.invisible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+							a.show-phones(href="")
+								p показать все телефоны
+								i.fa.fa-chevron-down(aria-hidden="true")
+				.office-row
+					img(src="img/of1.jpg", alt="")
+					.office-text
+						.office-street
+							p ул.Совхозная, д.41 (м.Люблино) 
+							a(href="").mobile-show Показать на карте
+						.office-work-time
+							i.fa.fa-clock-o(aria-hidden="true")
+							span Понедельник-Воскресенье с 9.00-20.00
+						.office-phone
+							.phone-block
+								.visible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+								.invisible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+							a.show-phones(href="")
+								p показать все телефоны
+								i.fa.fa-chevron-down(aria-hidden="true")
+				.office-row
+					img(src="img/of1.jpg", alt="")
+					.office-text
+						.office-street
+							p ул.Совхозная, д.41 (м.Люблино) 
+							a(href="").mobile-show Показать на карте
+						.office-work-time
+							i.fa.fa-clock-o(aria-hidden="true")
+							span Понедельник-Воскресенье с 9.00-20.00
+						.office-phone
+							.phone-block
+								.visible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+								.invisible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+							a.show-phones(href="")
+								p показать все телефоны
+								i.fa.fa-chevron-down(aria-hidden="true")
+				.office-row
+					img(src="img/of1.jpg", alt="")
+					.office-text
+						.office-street
+							p ул.Совхозная, д.41 (м.Люблино) 
+							a(href="").mobile-show Показать на карте
+						.office-work-time
+							i.fa.fa-clock-o(aria-hidden="true")
+							span Понедельник-Воскресенье с 9.00-20.00
+						.office-phone
+							.phone-block
+								.visible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+								.invisible-phone
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+									a(href="").phone
+										i.fa.fa-phone(aria-hidden="true")
+										span (925) 518-56-20
+							a.show-phones(href="")
+								p показать все телефоны
+								i.fa.fa-chevron-down(aria-hidden="true")
+			.maps-block
+				ul.abs-tabs.nav.nav-tabs(role="tablist")
+					li.tab-item
+						a.active#map-tab(data-toggle="tab" href="#map" role="tab" aria-controls="map" aria-expanded="true") На карте
+					li.tab-item
+						a#metro-tab(data-toggle="tab" href="#metro" role="tab" aria-controls="metro" aria-expanded="true") По метро
+				a(href="").mobile-map-close
+					i.fa.fa-times(aria-hidden="true")
+				.tab-content
+					.tab-pane.fade.show.active#map(role="tabpanel" aria-labelledby="map-tab")
+						#map_section
+					.tab-pane.fade#metro(role="tabpanel" aria-labelledby="metro-tab")
+						img(src="img/metro.jpg", alt="")
+		include modules/footer.jade
+		//- Скрипты страницы
+		include modules/scripts.jade

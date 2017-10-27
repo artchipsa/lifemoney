@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Живые деньги</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&amp;amp;subset=cyrillic"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"/>
+        <link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+        <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"/>
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-2 col-5"><a href="/" class="logo"><img src="img/logo.svg" alt="логотип"/></a></div>
+                    <div class="col-lg-10 col-md-10 col-7">
+                        <div class="navbar navbar-expand-xl">
+                            <button type="button" data-toggle="collapse" data-target="#header" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                            <div id="header" class="collapse navbar-collapse">
+                                <div class="container-fluid">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 col-md-12 col-xl-6">
+                                            <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item"><a href="/about" class="nav-link">О компании</a></li>
+                                                <li class="nav-item"><a href="/faq" class="nav-link">вопрос-ответ</a></li>
+                                                <li class="nav-item"><a href="/info" class="nav-link">информация</a></li>
+                                                <li class="nav-item"><a href="/offices" class="nav-link">офисы</a></li>
+                                                <li class="nav-item"><a href="/payonline" class="nav-link">Оплатить онлайн</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xl-6 align-items-center justify-content-end flex">
+                                            <div class="city-block"><i aria-hidden="true" class="fa fa-location-arrow"></i>
+                                                <select name="" class="custom-select">
+                                                    <option value="1">Москва</option>
+                                                    <option value="1">Красноярск</option>
+                                                    <option value="1">Калуга</option>
+                                                    <option value="1">Новосибирск</option>
+                                                    <option value="1">Хабаровск</option>
+                                                </select>
+                                            </div><a href="#" data-toggle="modal" data-target="#lk" class="btn secondary">Войти</a><a href="#" data-toggle="modal" data-target="#ask" class="btn red">Задать вопрос</a><a href="tel:+ 7 391 205 05 05" class="phone-block"><img src="img/phone.svg" alt=""/><span>+ 7 391 205 05 05</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-height"></div>
+        <div id="office-city" tabindex="-1" role="dialog" class="modal fade">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Выберите ваш город</div>
+                        <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="map_office"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="big-form flex">
+            <div class="lone-info">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-12 col-lg-9 col-xl-9"><a href="" class="back-link"><i aria-hidden="true" class="fa fa-long-arrow-left"></i><span>назад</span></a>
+                        <div class="form-block">
+                            <div class="form-title">Заполните персональные данные</div>
+                            <div class="form-row align-items-center">
+                                <div class="col-12 col-md-3 col-lg-3">
+                                    <label>Имя</label>
+                                </div>
+                                <div class="col-12 col-md-9 col-lg-8">
+                                    <input type="text" name=""/>
+                                </div>
+                            </div>
+                            <div class="form-row align-items-center">
+                                <div class="col-12 col-md-3 col-lg-3">
+                                    <label>Телефон</label>
+                                </div>
+                                <div class="col-12 col-md-9 col-lg-8">
+                                    <input type="tel" name="" class="phone"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-title">Выберите где забрать деньги</div>
+                            <div class="form-row align-items-center">
+                                <div class="col-12 col-md-3 col-lg-3"></div>
+                                <div class="col-12 col-md-9 col-lg-8">
+                                    <div class="custom-check">
+                                        <input id="money_on_card" type="checkbox" name="money_on_card"/>
+                                        <label for="money_on_card">Хочу получить деньги на карту</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row align-items-center">
+                                <div class="col-12 col-md-3 col-lg-3">
+                                    <label>Город</label>
+                                </div>
+                                <div class="col-12 col-md-9 col-lg-8">
+                                    <select id="city-change" class="custom-select-modal">
+                                        <option value="1">Москва</option>
+                                        <option value="2">Владивосток</option>
+                                        <option value="3">Красноярск</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row align-items-center">
+                                <div class="col-12 col-md-3 col-lg-3">
+                                    <label>Адрес офиса</label>
+                                </div>
+                                <div class="col-12 col-md-9 col-lg-8">
+                                    <select id="adress" type="text" name="" class="custom-select-modal adress">
+                                        <option value="1">Гоголевский б-р, 16/13, Москва</option>
+                                        <option value="2">Ермолаевский пер., 25, Москва</option>
+                                        <option value="3">Дмитровский пер., 11, Москва</option>
+                                        <option value="4">Николоямская ул., 15, Москва</option>
+                                        <option value="4">Орликов пер., 5с1, Москва</option>
+                                    </select><a href="#" data-toggle="modal" data-target="#office-city" class="show-on-map">выбрать офис на карте</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lone-calc">
+                <div class="form-title">Выберите сумму займа</div>
+                <label class="summ"></label>
+                <input id="range"/>
+                <div class="form-row">
+                    <div class="custom-check">
+                        <input id="accept" type="checkbox" name="accept"/>
+                        <label for="accept">Я соглашаюсь с обработкой персональных данных</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Отправить" disabled="disabled" class="btn blue"/>
+                </div>
+            </div>
+        </form>
+        <div class="footer-height"></div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-xl-6 col-md-12 col-12 col-lg-6"><span>Проектирование и дизайн <a href="http://chipsa.ru" target="_blank">«Чипса»</a>, 2017</span></div>
+                    <div class="col col-xl-6 col-md-12 col-12 col-lg-6"><a href="http://www.cbr.ru/finmarkets/" target="_blank">Государственный реестр микрофинансовых организаций</a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAE8iqwKY6PeKvryHYgM_k7cbH9ZyKk5g" async="async" defer="defer"></script>
+        <script src="https://use.fontawesome.com/856283dff2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

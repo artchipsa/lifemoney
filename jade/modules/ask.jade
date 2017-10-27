@@ -1,0 +1,26 @@
+.modal.small-modal.fade#ask(tabindex="-1" role="dialog")
+	.modal-dialog(role="document")
+		.modal-content
+			.ask
+				.modal-header
+					.modal-title Задать вопрос
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					form
+						.form-row
+							input.required(type="tel", name="", placeholder="как вас зовут")
+						.form-row
+							input.required(type="text", name="", placeholder="Ваш email или Телефон")
+						.form-row
+							textarea(name="", rows="10", placeholder="Чем мы могли бы вам помочь?")
+						.form-row
+							input(type="submit", value="Отправить").btn.blue
+			.success
+				.modal-header
+					.modal-title Заявка отправлена
+					button.close(data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") &times;
+				.modal-body
+					p Наш менеджер вам перезвонит #[br] в ближайшее время. Спасибо.
+					a.btn(href="#" data-dismiss="modal" aria-label="Close").btn.blue Закрыть

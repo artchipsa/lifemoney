@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include modules/head.jade
+	body
+		include modules/header.jade
+
+		.container-fluid
+			.row.justify-content-center
+				.col-12.col-md-12.col-lg-10.col-xl-10
+					a(href="").back-link
+						i.fa.fa-long-arrow-left(aria-hidden="true")
+						span назад
+					.form-title Оплата банковской картой
+					form.big-form
+						.row
+							.col-12.col-md-12.col-lg-7.col-xl-6
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+										label Номер договора
+									.col-12.col-md-9.col-lg-8
+										input(type="number", name="" placeholder="0000000000000000000")
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+										label Сумма
+									.col-12.col-md-9.col-lg-8
+										input(type="number", name="" placeholder="1 500 рублей")
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+										label Фамилия
+									.col-12.col-md-9.col-lg-8
+										input.disabled(type="number", name="" disabled)
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+										label Имя
+									.col-12.col-md-9.col-lg-8
+										input.disabled(type="number", name="" disabled)
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+										label Отчество
+									.col-12.col-md-9.col-lg-8
+										input.disabled(type="number", name="" disabled)
+								.form-row.align-items-center
+									.col-12.col-md-3.col-lg-4
+									.col-12.col-md-9.col-lg-8
+										input(type="submit", value="Оплатить банковской картой").btn.blue
+							.col-12.col-md-12.col-lg-5.col-xl-6
+								.bank-info
+									.bank-images
+										img(src="img/Mastercard.svg", alt="")
+										img(src="img/Visa.svg", alt="")
+									p Онлайн оплата, любыми картами любых банков
+									a(href="") Порядок оплаты банковской картой
+
+		include modules/footer.jade
+		//- Скрипты страницы
+		include modules/scripts.jade
