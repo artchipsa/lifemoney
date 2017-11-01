@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 html(lang="ru")
 	head
 		include modules/head.jade
@@ -14,6 +14,9 @@ html(lang="ru")
 				span займов
 			.owl-carousel
 				.item(style="background-image: url(img/main-slider.jpg)")
+					.divvideo
+						video#vid(autoplay loop muted)
+							source(src="vid.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
 					.main-slider__text-block
 						h2 ДЕЛАЕМ СКИДКУ ДО 77,6% НА ПРОЦЕНТЫ НАШИМ ПОСТОЯННЫМ КЛИЕНТАМ!
 						a(href="").btn.blue Оформить займ
@@ -48,9 +51,9 @@ html(lang="ru")
 									.pay-methods-block
 										a(href="").pay-item
 											img(src="img/pay1.png", alt="")
-										a(href="").pay-item
+										a(href="/pay-online").pay-item
 											img(src="img/pay2.png", alt="")
-										a(href="").pay-item
+										a(href="/offices").pay-item
 											img(src="img/pay3.png", alt="")
 										a(href="").pay-item
 											img(src="img/pay4.png", alt="")
@@ -83,7 +86,7 @@ html(lang="ru")
 										span После возврата первого займа вы получаете каждый последующий на более выгодных условиях. С каждым новым займом процент снижается, а доступная вам сумма увеличивается.
 									li
 										span Никаких дополнительных платежей, скрытых комиссий и недосказанности  - такова наша позиция.
-								a(href="").btn.blue Оформить
+								a(href="/make-lone").btn.blue Оформить
 		include modules/footer.jade
 
 

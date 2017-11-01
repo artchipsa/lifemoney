@@ -16,7 +16,7 @@
         <header>
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-2 col-md-2 col-5"><a href="/" class="logo"><img src="img/logo.svg" alt="логотип"/></a></div>
+                    <div class="col-lg-2 col-md-2 col-5"><a href="index.html" class="logo"><img src="img/logo.svg" alt="логотип"/></a></div>
                     <div class="col-lg-10 col-md-10 col-7">
                         <div class="navbar navbar-expand-xl">
                             <button type="button" data-toggle="collapse" data-target="#header" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
@@ -25,11 +25,11 @@
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 col-md-12 col-xl-6">
                                             <ul class="navbar-nav mr-auto">
-                                                <li class="nav-item"><a href="/about" class="nav-link">О компании</a></li>
-                                                <li class="nav-item"><a href="/faq" class="nav-link">вопрос-ответ</a></li>
-                                                <li class="nav-item"><a href="/info" class="nav-link">информация</a></li>
-                                                <li class="nav-item"><a href="/offices" class="nav-link">офисы</a></li>
-                                                <li class="nav-item"><a href="/payonline" class="nav-link">Оплатить онлайн</a></li>
+                                                <li class="nav-item"><a href="about" class="nav-link">О компании</a></li>
+                                                <li class="nav-item"><a href="faq" class="nav-link">вопрос-ответ</a></li>
+                                                <li class="nav-item"><a href="text" class="nav-link">информация</a></li>
+                                                <li class="nav-item"><a href="offices" class="nav-link">офисы</a></li>
+                                                <li class="nav-item"><a href="pay-online" class="nav-link">Оплатить онлайн</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 col-md-12 col-xl-6 align-items-center justify-content-end flex">
@@ -52,6 +52,90 @@
             </div>
         </header>
         <div class="header-height"></div>
+        <div id="lk" tabindex="-1" role="dialog" class="modal small-modal fade">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="login">
+                        <div class="modal-header">
+                            <div class="modal-title">Вход в личный кабинет</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <input type="tel" name="" placeholder="Ващ номер телефона" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Ваше имя" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="password" name="" placeholder="Пароль" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Войти" class="btn blue"/>
+                                </div>
+                                <div class="forgot-btn"><a href="#">Забыли пароль?</a></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="forgot-login">
+                        <div class="modal-header">
+                            <div class="modal-title">Забыли пароль?</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <p>Введите свой номер телефона, <br/>или почту на которую прийдет пароль</p>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Телефон или Адрес электронной почты" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Далее" class="btn blue"/>
+                                </div>
+                                <div class="forgot-btn"><a href="#">Вернуться ко входу</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ask" tabindex="-1" role="dialog" class="modal small-modal fade">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="ask">
+                        <div class="modal-header">
+                            <div class="modal-title">Задать вопрос</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <input type="tel" name="" placeholder="как вас зовут" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="" placeholder="Ваш email или Телефон" class="required"/>
+                                </div>
+                                <div class="form-row">
+                                    <textarea name="" rows="10" placeholder="Чем мы могли бы вам помочь?"></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <input type="submit" value="Отправить" class="btn blue"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="success">
+                        <div class="modal-header">
+                            <div class="modal-title">Заявка отправлена</div>
+                            <button data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Наш менеджер вам перезвонит <br/> в ближайшее время. Спасибо.</p><a href="#" data-dismiss="modal" aria-label="Close" class="btn btn blue">Закрыть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
@@ -180,7 +264,7 @@
                                 <form>
                                     <div class="form-row">
                                         <div class="col-12 col-md-6 col-lg-6 col-xl-6">
-                                            <input type="text" placeholder="как вас зовут"/>
+                                            <input type="text" placeholder="Как вас зовут"/>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6 col-xl-6">
                                             <input type="text" placeholder="Ваш email или Телефон"/>

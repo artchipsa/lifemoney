@@ -2,6 +2,11 @@ var doc = $(document);
 
 doc.ready(function(){
 
+	setTimeout(function(){
+		if ($('video').length){
+ 			$('video').get(0).play();
+		}
+	}, 0)
 
 	//fix float menu
 	header_height_fix();
@@ -33,7 +38,7 @@ doc.ready(function(){
         items:1,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 5500
+        autoplayTimeout: 6500
     });
 
   	$('.main-slider-timer').addClass('fill');
@@ -52,7 +57,12 @@ doc.ready(function(){
 		if (error){
 			console.log('error');
 		} else {
-			console.log('eee boi');
+			if (form.hasClass('big-form')) {
+				console.log(1);
+				form.fadeOut(300, function(){
+					$('.big-succes').fadeIn(300);
+				})
+			}
 		}
 	});
 
@@ -158,6 +168,33 @@ doc.ready(function(){
 		}
 	})
 
+	$(function () {
+        let outerDiv = $('.divvideo');
+        let videoTag = outerDiv.find('video');
+        $(window).resize(resize);
+        resize();
+        function resize() {
+            let width = outerDiv.width();
+            let height = outerDiv.height();
+            let aspectW = 16;
+            let aspectH = 9;
+            let scaleX = width / aspectW;
+            let scaleY = height / aspectH;
+            let scale = Math.max(scaleX, scaleY);
+            let w = Math.ceil(aspectW * scale);
+            let h = Math.ceil(aspectH * scale);
+            let x = 0;
+            let y = 0;
+            if (w > width) x = -(w - width) * 0.5;
+            if (h > height) y = -(h - height) * 0.5;
+            videoTag.css({
+                width: w,
+                height: h,
+                top: y,
+                left: x
+            });
+        }
+    });
 
 }); // end of ready
 
@@ -193,7 +230,7 @@ function initMap_lone(){
     });
 
 	var marker_icon = {
-		url: '../img/marker_icon.svg',
+		url: 'img/marker_icon.svg',
 		scaledSize: new google.maps.Size(126, 150),
 		origin: new google.maps.Point(0, 0)
 	}
@@ -230,13 +267,13 @@ function initMap(markers){
     });
 
 	var marker_icon = {
-		url: '../img/marker_icon.svg',
+		url: 'img/marker_icon.svg',
 		scaledSize: new google.maps.Size(126, 150),
 		origin: new google.maps.Point(0, 0)
 	}
 
 	var marker_icon_active = {
-		url: '../img/marker_icon_active.svg',
+		url: 'img/marker_icon_active.svg',
 		scaledSize: new google.maps.Size(126, 150),
 		origin: new google.maps.Point(0, 0)
 	}
@@ -265,9 +302,9 @@ function initMap(markers){
             return function() {
             	var latLng = new google.maps.LatLng(marker.position.lat(), marker.position.lng());
             	for (var j = 0; j < arMarkers.length; j++){
-            		arMarkers[j].setIcon('../img/marker_icon.svg');
+            		arMarkers[j].setIcon('img/marker_icon.svg');
             	}
-              	marker.setIcon('../img/marker_icon_active.svg');
+              	marker.setIcon('img/marker_icon_active.svg');
               	map.panTo(latLng);
               	$('.office-row').removeClass('active');
               	$('.office-row').eq(i).addClass('active');

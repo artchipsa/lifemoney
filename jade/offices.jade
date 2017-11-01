@@ -4,6 +4,8 @@ html(lang="ru")
 		include modules/head.jade
 	body
 		include modules/header.jade
+		include modules/lk.jade
+		include modules/ask.jade
 		.modal.fade#office-city(tabindex="-1" role="dialog")
 			.modal-dialog(role="document")
 				.modal-content
@@ -12,6 +14,7 @@ html(lang="ru")
 						button.close(data-dismiss="modal" aria-label="Close")
 							span(aria-hidden="true") &times;
 					.modal-body
+						p Если вашего города нет в списке, то вы можете выбрать ближайший, или воспользоваться услугой "деньги на карту" при оформлении заявки
 						select.custom-select-modal
 							option(value="1") Москва
 							option(value="2") Архангельск

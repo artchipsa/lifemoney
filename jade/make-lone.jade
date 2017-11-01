@@ -4,11 +4,13 @@ html(lang="ru")
 		include modules/head.jade
 	body
 		include modules/header.jade
+		include modules/lk.jade
+		include modules/ask.jade
 		.modal.fade#office-city(tabindex="-1" role="dialog")
 			.modal-dialog(role="document")
 				.modal-content
 					.modal-header
-						.modal-title Выберите ваш город
+						.modal-title Выберите оффис на карте
 						button.close(data-dismiss="modal" aria-label="Close")
 							span(aria-hidden="true") &times;
 					.modal-body
@@ -31,7 +33,7 @@ html(lang="ru")
 								.col-12.col-md-3.col-lg-3
 									label Телефон
 								.col-12.col-md-9.col-lg-8
-									input.phone(type="tel", name="")
+									input.phone.required(type="tel", name="")
 						.form-block
 							.form-title Выберите где забрать деньги
 							.form-row.align-items-center
@@ -66,10 +68,11 @@ html(lang="ru")
 				.form-row
 					.custom-check
 						input#accept(type="checkbox", name="accept")
-						label(for="accept") Я соглашаюсь с обработкой персональных данных
+						label(for="accept") Даю #[a(href="", target="_blank") Согласие] на обработку персональных данных
 				.form-row
 					input(type="submit", value="Отправить" disabled).btn.blue
-
+		.big-succes
+			p Спасибо за заявку! Менеджер свяжеться с вами в ближайшее время
 				
 		include modules/footer.jade
 		//- Скрипты страницы

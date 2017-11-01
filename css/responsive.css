@@ -1,4 +1,7 @@
 @media (max-width: 1481px) {
+  header {
+    padding: 1% 0%;
+  }
   header .nav-item .nav-link {
     margin-right: 20px;
   }
@@ -34,6 +37,10 @@
   }
   .pay-methods-block .pay-item {
     height: 85px;
+    width: calc(33% - 12px);
+  }
+  .pay-methods-block .pay-item img {
+    width: 80%;
   }
   .card-block img {
     width: 95%;
@@ -73,7 +80,7 @@
   }
 }
 @media (max-width: 1367px) {
-  header .phone-block span {
+  header .phone-block img {
     display: none;
   }
   header .nav-item .nav-link {
@@ -278,6 +285,9 @@
     display: inline-block;
     font-size: 4vw;
   }
+  .big-succes p {
+    font-size: 5.5vw;
+  }
 }
 @media (max-width: 769px) {
   .faq-block .faq-row .faq-title {
@@ -442,10 +452,17 @@
   header .nav-item .nav-link {
     font-size: 5vw;
   }
+  .big-succes p {
+    font-size: 6.5vw;
+    padding: 25% 10%;
+  }
 }
 @media (max-width: 469px) {
   header {
     padding: 2% 0%;
+  }
+  .divvideo {
+    display: none;
   }
   .title {
     line-height: 115%;
@@ -673,5 +690,9 @@
   header .phone-block span {
     display: inline-block;
     font-size: 4vw;
+  }
+  .big-succes p {
+    font-size: 8.5vw;
+    padding: 35% 5%;
   }
 }
