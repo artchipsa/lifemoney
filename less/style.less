@@ -6,12 +6,13 @@
 .font(Nova, ProximaNovaBold, 800);
 .font(Nova, ProximaNovaSemibold, 600);
 
-body{
+body, html{
 	font-size: 18px;
 	font-family: Nova;
 	font-weight: 400;
 	overflow-x: hidden;
 	min-height: 100vh;
+	width: 100%;
 	position: relative;
 }
 
@@ -35,7 +36,9 @@ body{
     width: 100%;
     height: 100%;
 }
-
+.modal{
+	max-width: 100%;
+}
 header{
 	position: fixed;
 	top: 0px;
@@ -888,9 +891,9 @@ footer{
 		display: none;
 	}
 }
-
 .modal-dialog{
-	max-width: 1240px;
+	width: 1240px;
+	max-width: none;
 }
 .modal-content{
 	padding: 60px 100px;
@@ -912,19 +915,19 @@ footer{
 	cursor: pointer;
 	outline: none;
 }
-.modal-body .select2-container{
+.select2-container{
 	width: 100%;
 }
-.modal-body .select2-selection__rendered{
+.select2-selection__rendered{
 	height: 100%;
 	padding: 16px 0px;
 	padding-left: 20px!important;
 	font-size: 22px;
 }
-.modal-body .select2-container .select2-selection--single{
+.select2-container .select2-selection--single{
 	height: 60px;
 }
-.modal-body .select2-container--default .select2-selection--single .select2-selection__arrow{
+.select2-container--default .select2-selection--single .select2-selection__arrow{
 	height: 58px;
 	right: 19px;
 }
@@ -1358,6 +1361,10 @@ table {
 		font-size: 4vw;
 		padding: 12%;
 	}
+}
+
+.mobile-select{
+	display: none;
 }
 
 @import 'responsive.less';

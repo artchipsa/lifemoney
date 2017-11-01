@@ -199,7 +199,7 @@
 		top: 8.7vh;
 	}
 	.office-wrapper-block{
-		height: 84.6vh;
+		height: auto;
 	}
 	.office-street .mobile-show{
 		display: block;
@@ -219,8 +219,9 @@
 		right: 0px;
 	}
 	.modal-dialog{
-		width: 991px;
-		margin: 10px;
+		width: 95%;
+		max-width: none;
+		margin: 20px auto;
 	}
 	.faq-block .faq-row .faq-title h2{
 		font-size: 3.4vw;
@@ -464,6 +465,9 @@
 		font-size: 6.5vw;
 		padding: 25% 10%;
 	}
+	.mobile-select{
+		display: block;
+	}
 }
 
 @media (max-width: 469px){
@@ -578,14 +582,14 @@
 		position: static;
 	}
 	.office-wrapper-block{
-		height: 75.5vh;
+		height: auto;
 	}
 	.office-wrapper-block .maps-block {
-	    height: 74vh;
-	    top: 8.7vh;
+        height: 92vh;
+		top: 8.2vh;
 	}
 	.office-wrapper-block .maps-block.active{
-		transform: translateX(-2.8%);
+		transform: translateX(0px);
 	}
 	.office-row{
 		flex-flow: row wrap;
@@ -633,6 +637,7 @@
 		font-size: 15.4vw;
 	}
 	.text-menu{
+		padding: 20px 10px;
 		margin-top: 50px;
 		margin-bottom: 30px;
 	}
@@ -703,5 +708,14 @@
 	.big-succes p{
 		font-size: 8.5vw;
 		padding: 35% 5%;
+	}
+	.text-block a{
+		width: 95%;
+	}
+	.text-menu .select2-container .select2-selection--single .select2-selection__rendered{
+		font-size: 14px;
+	}
+	.modal-content{
+		padding: 30px;
 	}
 }
