@@ -89,7 +89,7 @@ doc.ready(function(){
 	})
 
 	$('.office-wrapper-block').mCustomScrollbar({
-		theme: 'minimal-dark'
+		theme: 'dark'
 	});
 
 	doc.on('click', '.office-street .mobile-show', function(e){
@@ -112,7 +112,9 @@ doc.ready(function(){
 		$('input[type="tel"]').mask('+7 (000) 000-00-00');
 	}
 
-	$('#money_on_card').change(function(){
+
+	// Кароче сказали пох на галочку
+/*	$('#money_on_card').change(function(){
 		if ($(this).prop('checked')){
 			$(this).parents('.form-block').find('input[type="text"]').addClass('disabled');
 			$(this).parents('.form-block').find('input[type="text"]').prop('disabled', true);
@@ -123,7 +125,7 @@ doc.ready(function(){
 			$('.custom-select-modal').prop('disabled', false);
 		}
 	})
-
+*/
 	$('#accept').change(function(){
 		if ($(this).prop('checked')){
 			$(this).parents('.lone-calc').find('input[type="submit"]').prop('disabled', false);
@@ -144,7 +146,7 @@ doc.ready(function(){
 		$('#range').ionRangeSlider({
 			type: 'single',
 			min: 3000,
-			max: 70000,
+			max: 60000,
 			step: 1000,
 		    grid: false,
 		    onStart: function(data){

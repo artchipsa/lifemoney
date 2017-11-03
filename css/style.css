@@ -297,6 +297,9 @@ header .btn:last-child {
 .main-hero-text {
   margin-bottom: 65px;
 }
+.main-hero-text .btn {
+  margin-top: 20px;
+}
 .main-hero-text .item {
   padding: 70px 55px;
   border-radius: 5px;
@@ -540,7 +543,7 @@ footer span a {
   width: 75%;
 }
 .numbers-block {
-  margin-bottom: 250px;
+  margin-bottom: 180px;
   color: #4D4B87;
 }
 .numbers-block .item {
@@ -802,9 +805,21 @@ footer span a {
   color: #4C5970;
   font-weight: lighter;
 }
-.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical,
-.mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical {
-  right: -20px;
+.mCSB_scrollTools {
+  right: auto;
+  left: 49.8%;
+  top: 5px;
+  width: 10px;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #F03454;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: #F03454;
+}
+.mCSB_inside > .mCSB_container {
+  margin-right: 5px;
 }
 .nav-tabs {
   border: none;
@@ -1732,7 +1747,7 @@ table td:last-child {
     width: 65%;
   }
   .office-wrapper-block {
-    height: 85.5vh;
+    height: auto;
   }
   .office-wrapper-block .maps-block {
     height: 85.5vh;

@@ -301,6 +301,9 @@ header{
 
 .main-hero-text{
 	margin-bottom: 65px;
+	.btn{
+		margin-top: 20px;
+	}
 	.item{
 		padding: 70px 55px;
 		border-radius: 5px;
@@ -554,7 +557,7 @@ footer{
 }
 
 .numbers-block{
-	margin-bottom: 250px;
+	margin-bottom: 180px;
 	color: @dark-purple;	
 	.item{
 		text-align: center;
@@ -834,9 +837,22 @@ footer{
 		}
 	}
 }
-.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical, .mCSB_outside+.mCS-minimal.mCSB_scrollTools_vertical{
-	right: -20px;
+.mCSB_scrollTools{	
+	right: auto;
+	left: 49.8%;
+	top: 5px;
+	width: 10px;
 }
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background-color: @red;
+}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
+	background-color: @red;
+}
+.mCSB_inside>.mCSB_container{
+	margin-right: 5px;
+}
+
 .nav-tabs{
 	border: none;
 	.tab-item{
