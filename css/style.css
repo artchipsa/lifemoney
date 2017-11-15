@@ -737,7 +737,7 @@ footer span a {
 .office-wrapper-block .offices-block .office-row.active,
 .office-wrapper-block .offices-block .office-row:hover {
   background-color: #fff;
-  box-shadow: 0px 2px 40px rgba(139, 139, 139, 0.65);
+  box-shadow: 0px 2px 40px #8b8b8b;
 }
 .office-wrapper-block .offices-block .office-row img {
   margin-right: 30px;
